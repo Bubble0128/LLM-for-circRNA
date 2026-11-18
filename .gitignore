@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.part
+.env
+.env.*
+
+# Machine-specific connection settings and credentials do not belong in this archive.
+*.pem
+id_ed25519*
+id_rsa*
+local_config.*

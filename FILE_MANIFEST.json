@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T07:24:33.384738+00:00",
+  "hash_algorithm": "sha256",
+  "self_excluded": "FILE_MANIFEST.json",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 180,
+      "sha256": "f8e6979135c4e8534d84ec1533bfe48e81078a95162d04700370e7baab2e0e32"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2350,
+      "sha256": "4167cf269187755eaa73b8606c96332afac235574b58cf860475f714435e39b6"
+    },
+    {
+      "path": "datasets/secondary_structure/README.md",
+      "bytes": 4539,
+      "sha256": "979180b96a2a1225acb03b08da2977fdc6fb0b0fab4288db12a7171eac2969ac"
+    },
+    {
+      "path": "datasets/secondary_structure/data/RNAStrAlign.tar.gz",
+      "bytes": 8887813,
+      "sha256": "48ca0d41337bcaf02ede796c8c6f4c8d70d674b32a9dce3450c2fa89ba392a90"
+    },
+    {
+      "path": "datasets/secondary_structure/data/archiveII.tar.gz",
+      "bytes": 2545591,
+      "sha256": "633bc50f8e9381f737b680fa6b4c79061a0a781773a5c38b342856eb1a6ac8a4"
+    },
+    {
+      "path": "datasets/secondary_structure/data/bpRNA.tar.gz",
+      "bytes": 4215860,
+      "sha256": "69dc58fe6cfdf1ec178b1732b7da35b828dbbc7608e89d9debdde9d538937a55"
+    },
+    {
+      "path": "datasets/secondary_structure/data/bpRNAnew.tar.gz",
+      "bytes": 1645218,
+      "sha256": "0d1959ac93e2b15ac47b56c7dd8155d9a0fcd3a692f75f2d0ede9221bf9d9dfb"
+    },
+    {
+      "path": "datasets/secondary_structure/dataset_audit.json",
+      "bytes": 16717,
+      "sha256": "43389a1e5127864def12ea15eff5140d460c3b47b18e10d683843d0c709bece5"
+    },
+    {
+      "path": "datasets/secondary_structure/dataset_summary.csv",
+      "bytes": 459,
+      "sha256": "b2226a90ed7dc9f993f51639175b046e92810262e3187104bf04aa85d3b8ccb6"
+    },
+    {
+      "path": "datasets/secondary_structure/processed/RNAStrAlign.jsonl.gz",
+      "bytes": 3980213,
+      "sha256": "f365c59f8173d703aa5281541700528a7bf977a3a14f57eb72f4683fc711e29e"
+    },
+    {
+      "path": "datasets/secondary_structure/processed/archiveII.jsonl.gz",
+      "bytes": 1041892,
+      "sha256": "7a826ec1ac889f147e22f167becdf0052950610111f3544b92c1afccf151f24a"
+    },
+    {
+      "path": "datasets/secondary_structure/processed/bpRNA_TR0.jsonl.gz",
+      "bytes": 1687555,
+      "sha256": "e41a8df14cb5da1807d4a1118e72e3d5b26698419c7f741397f8320f3cd31692"
+    },
+    {
+      "path": "datasets/secondary_structure/processed/bpRNA_TS0.jsonl.gz",
+      "bytes": 224464,
+      "sha256": "2a5c8a89b8d2e37cece0c1a8798407877095beaf2887531a15e2dea84b378e31"
+    },
+    {
+      "path": "datasets/secondary_structure/processed/bpRNA_VL0.jsonl.gz",
+      "bytes": 218866,
+      "sha256": "b8c9e224b44df1e39ec638c2485c322c35ec208bbcd8eb3f5c0fcfdd5fc2207c"
+    },
+    {
+      "path": "datasets/secondary_structure/processed/bpRNAnew.jsonl.gz",
+      "bytes": 858998,
+      "sha256": "bf270c1cfa55f7ec00976d67f85e5b0a417b01d7f2db5540e3927abcc9fda1cf"
+    },
+    {
+      "path": "datasets/secondary_structure/source_catalog.csv",
+      "bytes": 2525,
+      "sha256": "f7a9f2e760ef90c963919f6fd00dddd5a04341e8228239e911a040255388ebda"
+    },
+    {
+      "path": "datasets/secondary_structure/supplementary/Load_bpRNA_1m_Mysql_Part1.zip",
+      "bytes": 39672063,
+      "sha256": "fda31994e356b5fa61109176938b13b7221e31233df603a5c02f82ae0e779a21"
+    },
+    {
+      "path": "datasets/secondary_structure/supplementary/README.md",
+      "bytes": 1643,
+      "sha256": "0830640d9b47c01fb4fee2da63f906a756d3254e9a3b602b970ab05545302896"
+    },
+    {
+      "path": "datasets/secondary_structure/supplementary/manifest.json",
+      "bytes": 4284,
+      "sha256": "eb02083bb86ad53253a61db410c6ef8f715f7401cf26a24ac5b4f60880ab39e6"
+    },
+    {
+      "path": "datasets/secondary_structure/tools/audit_datasets.py",
+      "bytes": 7856,
+      "sha256": "ba91d1e8edd42b4f463940954d38579d7417de98ac0f066e46567ef937099253"
+    },
+    {
+      "path": "datasets/secondary_structure/tools/download_sources.py",
+      "bytes": 2108,
+      "sha256": "a25a229700b8ed74b33b88707d5bcd381d6217e02cbd24d58227ae0cbe80d78d"
+    },
+    {
+      "path": "literature/README.md",
+      "bytes": 4052,
+      "sha256": "fa5fa8358bcebe982d15cc9ea09688342c4138f4ceedad5a8aab1ea51ff4ba16"
+    },
+    {
+      "path": "literature/download_papers.py",
+      "bytes": 2760,
+      "sha256": "035ff756b946d9de62c8cac8eeb1de186ffd0a8bf551fdaf74971dfe9f201cc6"
+    },
+    {
+      "path": "literature/papers.json",
+      "bytes": 9949,
+      "sha256": "5dee1fd169a3c9ade5e77efaf99a2cc800bf3e3ceec4781f71847818138e2704"
+    },
+    {
+      "path": "literature/references.bib",
+      "bytes": 2176,
+      "sha256": "b9c0c776be9d92993a062a3876866a84efefce74317bfd8c86441aed78ee5f08"
+    },
+    {
+      "path": "tools/verify_archive.py",
+      "bytes": 844,
+      "sha256": "2793d5b236f5855ba958dcb395083cb73e1973a7331ba659ba317503c70a7a0f"
+    }
+  ]
+}

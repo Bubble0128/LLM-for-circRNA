@@ -1,0 +1,101 @@
+{
+  "checked_utc": "2026-11-18T07:21:44.657660+00:00",
+  "status": "AVAILABLE_FILE_AND_REFERENCE_LINKS_ARCHIVED",
+  "downloaded_files": [
+    {
+      "filename": "Load_bpRNA_1m_Mysql_Part1.zip",
+      "url": "https://raw.githubusercontent.com/hendrixlab/bpRNA/master/bpRNA_1m/Load_bpRNA_1m_Mysql_Part1.zip",
+      "size_bytes": 39672063,
+      "sha256": "fda31994e356b5fa61109176938b13b7221e31233df603a5c02f82ae0e779a21",
+      "type": "Official SQL database reconstruction archive; not BPSEQ or DBN",
+      "member_count": 10,
+      "status": "DOWNLOADED",
+      "limitations": [
+        "Part 1 of two SQL archives; not a complete import alone",
+        "SQL not executed; original dataset licence not verified"
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "dataset": "bpRNA-1m v1.0 full",
+      "published_records": 102318,
+      "official_landing_url": "https://bprna.cgrb.oregonstate.edu/download.php",
+      "candidate_download_urls": [
+        {
+          "url": "https://bprna.cgrb.oregonstate.edu/bpRNA_1m/dbnFiles.zip",
+          "verification": "URL referenced by Graphein public source; binary availability not yet verified",
+          "evidence_url": "https://graphein.ai/_modules/graphein/rna/utils.html"
+        }
+      ],
+      "status": "NOT_DOWNLOADED",
+      "blocked_hosts": [
+        "bprna.cgrb.oregonstate.edu"
+      ],
+      "observed_error": "Tunnel connection failed: 403 Forbidden",
+      "size_bytes": null,
+      "sha256": null,
+      "label_type": "Reference secondary structures; mixed comparative and experimental provenance",
+      "rights": "No explicit dataset reuse licence verified"
+    },
+    {
+      "dataset": "bpRNA-1m(90)",
+      "official_landing_url": "https://bprna.cgrb.oregonstate.edu/download.php",
+      "candidate_download_urls": [
+        {
+          "url": "https://bprna.cgrb.oregonstate.edu/bpRNA_1m_90.zip",
+          "verification": "URL referenced by Graphein public source; binary availability not yet verified",
+          "evidence_url": "https://graphein.ai/_modules/graphein/rna/utils.html"
+        }
+      ],
+      "status": "NOT_DOWNLOADED",
+      "blocked_hosts": [
+        "bprna.cgrb.oregonstate.edu"
+      ],
+      "size_bytes": null,
+      "sha256": null,
+      "label_type": "Sequence-similarity-filtered reference structure subset; full ZIP contents not inspected",
+      "rights": "No explicit dataset reuse licence verified"
+    },
+    {
+      "dataset": "GSE126195 / PRJNA521266",
+      "official_landing_url": "https://www.ncbi.nlm.nih.gov/bioproject/521266",
+      "series_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126195",
+      "status": "NOT_DOWNLOADED",
+      "blocked_hosts": [
+        "www.ncbi.nlm.nih.gov",
+        "ftp.ncbi.nlm.nih.gov"
+      ],
+      "observed_error": "www.ncbi.nlm.nih.gov: Tunnel connection failed: 403 Forbidden",
+      "supplementary_size_reported_mb": 2,
+      "sample_count": 46,
+      "sample_count_meaning": "Deposited experiments, not 46 independent circular RNA structures",
+      "label_type": "Per-nucleotide SHAPE reactivity, read depths, standard errors; not direct base-pair adjacency ground truth",
+      "verified_sample": {
+        "accession": "GSM3593206",
+        "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3593206",
+        "filename": "GSM3593206_33_circRTN4_SHAPE-MaP.txt.gz",
+        "reported_size": "20.0 Kb",
+        "reactivity_column": "Norm_profile"
+      },
+      "raw_reads_excluded": true,
+      "rights": "Public GEO data; no dataset-specific licence verified"
+    }
+  ],
+  "official_alternative_archives": [
+    {
+      "dataset": "bpRNA-1m SQL database reconstruction",
+      "url": "https://raw.githubusercontent.com/hendrixlab/bpRNA/master/bpRNA_1m/Load_bpRNA_1m_Mysql_Part1.zip",
+      "size_bytes": 39672063,
+      "status": "DOWNLOADED",
+      "notes": "Not equivalent to ready-to-use BPSEQ or DBN files"
+    },
+    {
+      "dataset": "bpRNA-1m SQL database reconstruction",
+      "url": "https://raw.githubusercontent.com/hendrixlab/bpRNA/master/bpRNA_1m/Load_bpRNA_1m_Mysql_Part2.zip",
+      "size_bytes": 68625251,
+      "status": "NOT_DOWNLOADED",
+      "notes": "Optional larger companion SQL archive; not included in this repository. Part 1 alone cannot rebuild the full database."
+    }
+  ]
+}

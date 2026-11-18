@@ -1,0 +1,7 @@
+split,archive_records,valid_records,min_length,max_length,unique_normalized_sequences,duplicate_sequence_records,records_with_ambiguous_bases,records_with_crossing_pairs,noncanonical_pairs
+bpRNA_TR0,10814,10814,33,498,10814,0,132,0,0
+bpRNA_TS0,1305,1305,22,499,1305,0,17,0,0
+bpRNA_VL0,1300,1300,33,497,1300,0,14,0,0
+bpRNAnew,5401,5401,33,489,5401,0,13,0,0
+archiveII,3966,3966,28,1800,3451,515,0,1079,0
+RNAStrAlign,20923,20856,30,600,16549,4307,1617,2785,9862

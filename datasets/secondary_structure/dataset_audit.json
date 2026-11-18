@@ -1,0 +1,497 @@
+{
+  "audited_utc": "2026-11-18T07:12:48.418527+00:00",
+  "normalization": "Uppercase and T->U for normalized sequences and hashes; original sequence retained",
+  "label_policy": "Preserve pairs exactly; partner 0 means unpaired; no ambiguous-base filtering",
+  "limitations": [
+    "Exact sequence overlap only; no homology/family analysis",
+    "EVA pretraining overlap not audited",
+    "Linear RNA records are not labelled as circular",
+    "Canonicalized MXfold2 releases are not the full original databases"
+  ],
+  "archives": {
+    "bpRNA": {
+      "url": "https://github.com/mxfold/mxfold2/releases/download/v0.1.1/bpRNA.tar.gz",
+      "bytes": 4215860,
+      "sha256": "69dc58fe6cfdf1ec178b1732b7da35b828dbbc7608e89d9debdde9d538937a55",
+      "published_lists": {
+        "data/TR0-canonicals.lst": {
+          "entries": 10814,
+          "missing_members": 0
+        },
+        "data/TS0-canonicals.lst": {
+          "entries": 1305,
+          "missing_members": 0
+        },
+        "data/VL0-canonicals.lst": {
+          "entries": 1300,
+          "missing_members": 0
+        }
+      }
+    },
+    "bpRNAnew": {
+      "url": "https://github.com/mxfold/mxfold2/releases/download/v0.1.1/bpRNAnew.tar.gz",
+      "bytes": 1645218,
+      "sha256": "0d1959ac93e2b15ac47b56c7dd8155d9a0fcd3a692f75f2d0ede9221bf9d9dfb",
+      "published_lists": {
+        "data/bpRNAnew.nr500.canonicals.lst": {
+          "entries": 5401,
+          "missing_members": 0
+        }
+      }
+    },
+    "archiveII": {
+      "url": "https://github.com/mxfold/mxfold2/releases/download/v0.1.1/archiveII.tar.gz",
+      "bytes": 2545591,
+      "sha256": "633bc50f8e9381f737b680fa6b4c79061a0a781773a5c38b342856eb1a6ac8a4",
+      "published_lists": {
+        "data/archiveII.lst": {
+          "entries": 3966,
+          "missing_members": 0
+        }
+      }
+    },
+    "RNAStrAlign": {
+      "url": "https://github.com/mxfold/mxfold2/releases/download/v0.1.1/RNAStrAlign.tar.gz",
+      "bytes": 8887813,
+      "sha256": "48ca0d41337bcaf02ede796c8c6f4c8d70d674b32a9dce3450c2fa89ba392a90",
+      "published_lists": {
+        "data/RNAStrAlign600-train.lst": {
+          "entries": 20923,
+          "missing_members": 0
+        }
+      }
+    }
+  },
+  "splits": {
+    "bpRNA_TR0": {
+      "archive_records": 10814,
+      "valid_records": 10814,
+      "min_length": 33,
+      "max_length": 498,
+      "unique_normalized_sequences": 10814,
+      "duplicate_sequence_records": 0,
+      "sequences_with_multiple_pair_annotations": 0,
+      "records_with_ambiguous_bases": 132,
+      "records_with_crossing_pairs": 0,
+      "noncanonical_pairs": 0,
+      "base_pairs": 288935,
+      "errors": []
+    },
+    "bpRNA_TS0": {
+      "archive_records": 1305,
+      "valid_records": 1305,
+      "min_length": 22,
+      "max_length": 499,
+      "unique_normalized_sequences": 1305,
+      "duplicate_sequence_records": 0,
+      "sequences_with_multiple_pair_annotations": 0,
+      "records_with_ambiguous_bases": 17,
+      "records_with_crossing_pairs": 0,
+      "noncanonical_pairs": 0,
+      "base_pairs": 35573,
+      "errors": []
+    },
+    "bpRNA_VL0": {
+      "archive_records": 1300,
+      "valid_records": 1300,
+      "min_length": 33,
+      "max_length": 497,
+      "unique_normalized_sequences": 1300,
+      "duplicate_sequence_records": 0,
+      "sequences_with_multiple_pair_annotations": 0,
+      "records_with_ambiguous_bases": 14,
+      "records_with_crossing_pairs": 0,
+      "noncanonical_pairs": 0,
+      "base_pairs": 34351,
+      "errors": []
+    },
+    "bpRNAnew": {
+      "archive_records": 5401,
+      "valid_records": 5401,
+      "min_length": 33,
+      "max_length": 489,
+      "unique_normalized_sequences": 5401,
+      "duplicate_sequence_records": 0,
+      "sequences_with_multiple_pair_annotations": 0,
+      "records_with_ambiguous_bases": 13,
+      "records_with_crossing_pairs": 0,
+      "noncanonical_pairs": 0,
+      "base_pairs": 128025,
+      "errors": []
+    },
+    "archiveII": {
+      "archive_records": 3966,
+      "valid_records": 3966,
+      "min_length": 28,
+      "max_length": 1800,
+      "unique_normalized_sequences": 3451,
+      "duplicate_sequence_records": 515,
+      "sequences_with_multiple_pair_annotations": 24,
+      "records_with_ambiguous_bases": 0,
+      "records_with_crossing_pairs": 1079,
+      "noncanonical_pairs": 0,
+      "base_pairs": 229188,
+      "errors": []
+    },
+    "RNAStrAlign": {
+      "archive_records": 20923,
+      "valid_records": 20856,
+      "min_length": 30,
+      "max_length": 600,
+      "unique_normalized_sequences": 16549,
+      "duplicate_sequence_records": 4307,
+      "sequences_with_multiple_pair_annotations": 275,
+      "records_with_ambiguous_bases": 1617,
+      "records_with_crossing_pairs": 2785,
+      "noncanonical_pairs": 9862,
+      "base_pairs": 902378,
+      "errors": [
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E01638.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00082.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00524.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Plastids/P00853.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E02209.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00181.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00071.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E01637.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Plastids/P00840.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E01689.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00028.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B03879.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00019.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00033.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E02767.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Archaea/A00006.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Plastids/P00859.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00049.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00056.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B03207.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Plastids/P00371.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E01162.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00293.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00761.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E02815.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E02650.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00080.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00760.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00173.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E02831.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00185.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B05532.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00178.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B05127.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B02764.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00603.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00180.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B05961.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B03494.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00024.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00519.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00179.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E01982.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Plastids/P00006.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B06041.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B04795.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00294.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00853.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B05369.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B04353.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E01526.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Archaea/A00208.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B02452.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00017.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00528.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Archaea/A00255.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00184.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00232.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Plastids/P00051.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00610.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00018.bpseq",
+          "error": "Invalid index or nucleotide field"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00027.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00793.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00054.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B07205.bpseq",
+          "error": "Asymmetric pairing labels"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Eukaryota/E00288.bpseq",
+          "error": "Partner out of range or self-pair"
+        },
+        {
+          "member": "data/RNAStrAlign/5S_rRNA_database/Bacteria/B00295.bpseq",
+          "error": "Invalid index or nucleotide field"
+        }
+      ]
+    }
+  },
+  "exact_sequence_overlap": [
+    {
+      "split_a": "bpRNA_TR0",
+      "split_b": "bpRNA_TS0",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNA_TR0",
+      "split_b": "bpRNA_VL0",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNA_TR0",
+      "split_b": "bpRNAnew",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNA_TR0",
+      "split_b": "archiveII",
+      "unique_shared_sequences": 732
+    },
+    {
+      "split_a": "bpRNA_TR0",
+      "split_b": "RNAStrAlign",
+      "unique_shared_sequences": 498
+    },
+    {
+      "split_a": "bpRNA_TS0",
+      "split_b": "bpRNA_VL0",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNA_TS0",
+      "split_b": "bpRNAnew",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNA_TS0",
+      "split_b": "archiveII",
+      "unique_shared_sequences": 103
+    },
+    {
+      "split_a": "bpRNA_TS0",
+      "split_b": "RNAStrAlign",
+      "unique_shared_sequences": 63
+    },
+    {
+      "split_a": "bpRNA_VL0",
+      "split_b": "bpRNAnew",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNA_VL0",
+      "split_b": "archiveII",
+      "unique_shared_sequences": 62
+    },
+    {
+      "split_a": "bpRNA_VL0",
+      "split_b": "RNAStrAlign",
+      "unique_shared_sequences": 47
+    },
+    {
+      "split_a": "bpRNAnew",
+      "split_b": "archiveII",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "bpRNAnew",
+      "split_b": "RNAStrAlign",
+      "unique_shared_sequences": 0
+    },
+    {
+      "split_a": "archiveII",
+      "split_b": "RNAStrAlign",
+      "unique_shared_sequences": 1558
+    }
+  ]
+}
